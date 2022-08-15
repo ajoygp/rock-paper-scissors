@@ -17,7 +17,7 @@ function getUserChoice(){
         while(!hand.includes(choice)){
             choice=prompt("Enter Your Choice").toLowerCase();    
         }
-    return(choice)
+    return(choice);
 
 }
 
@@ -27,7 +27,7 @@ function gameRound(){
     let userChoice= getUserChoice();
 
     if(computerChoice==userChoice){
-        console.log(`Draw! Both ${userChoice}`)
+        console.log(`Draw! Both ${userChoice}`);
     }
     else if(wins[userChoice]==computerChoice){
         console.log(`You Win! ${userChoice} beats ${computerChoice}`)
@@ -70,4 +70,4 @@ function game(){
     console.log(`You: ${userScore}| Computer: ${comScore} \n ${winner(userScore,comScore)}`)
 }
 
-game()
+game();
