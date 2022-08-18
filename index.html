@@ -4,9 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <div class="header"> <span>Rock</span> <span>Paper</span> <span>Scissors</span> </div>
+    <div class="game">
+        <div class="scores">
+            <div class="score-each">Your Score
+                 <div class="user-score"></div>
+             </div>
+             <div class="result"></div>
+             <div class="score-each">Computer Score
+                 <div class="computer-score"></div>
+             </div>
+         </div>
+     
+         <div class="battle">
+             <div class="user-choice"></div>
+             <div class="round-result">Click Your Choice to Start</div>
+             <div class="computer-choice"></div>
+         </div>
+     
+         <div class="user-options">
+             <div class="choice rock" data-key="rock">Rock</div>
+             <div class="choice paper" data-key="paper">Paper</div>
+             <div class="choice scissors" data-key="scissors">Scissors</div>
+         </div>
+
+    </div>
     
+
 </body>
 </html>
